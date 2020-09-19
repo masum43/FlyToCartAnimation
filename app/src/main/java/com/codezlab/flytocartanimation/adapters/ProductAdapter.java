@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,10 +13,6 @@ import com.codezlab.flytocartanimation.R;
 import com.codezlab.flytocartanimation.models.Product;
 
 import java.util.List;
-
-/**
- * Created by coderzlab on 20/5/17.
- */
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductHolder> {
 
@@ -48,7 +45,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
         holder.itemIV.setImageResource(product.getResourceId());
         holder.itemCopyIV.setImageResource(product.getResourceId());
 
-        holder.itemCopyIV.setOnClickListener(new View.OnClickListener() {
+        holder.wholeLin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(actionListener!=null)
@@ -69,12 +66,15 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
 
         protected ImageView itemIV;
         protected ImageView itemCopyIV;
+        protected LinearLayout wholeLin;
+        ;
 
 
         public ProductHolder(View itemView) {
             super(itemView);
             itemIV=(ImageView) itemView.findViewById(R.id.itemIV);
             itemCopyIV=(ImageView) itemView.findViewById(R.id.itemCopyIV);
+            wholeLin= itemView.findViewById(R.id.wholeLin);
 
         }
 

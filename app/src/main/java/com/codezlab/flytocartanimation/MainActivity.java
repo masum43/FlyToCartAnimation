@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         titleTV = (TextView) mToolbar.findViewById(R.id.toolbar_center_title);
 
-        titleTV.setText("FlyToCartAnimation");
+        titleTV.setText("FlyToCart");
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -107,19 +107,19 @@ public class MainActivity extends AppCompatActivity {
 
             switch (c) {
                 case 1:
-                    list.add(new Product(i, "product_" + i, R.drawable.one));
+                    list.add(new Product(i, "product_" + i, R.drawable.bakery1));
                     break;
 
                 case 2:
-                    list.add(new Product(i, "product_" + i, R.drawable.two));
+                    list.add(new Product(i, "product_" + i, R.drawable.bakery_2));
                     break;
 
                 case 3:
-                    list.add(new Product(i, "product_" + i, R.drawable.three));
+                    list.add(new Product(i, "product_" + i, R.drawable.bakery_3));
                     break;
 
                 case 4:
-                    list.add(new Product(i, "product_" + i, R.drawable.four));
+                    list.add(new Product(i, "product_" + i, R.drawable.bag));
                     break;
             }
 
