@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(String.valueOf(++itemCounter));
     }
 
+
+
     private void makeFlyAnimation(ImageView targetView) {
 
         RelativeLayout destView = (RelativeLayout) findViewById(R.id.cartRelativeLayout);
@@ -94,8 +96,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
     private List<Product> makeProductsList() {
 
         List<Product> list = new ArrayList<>();

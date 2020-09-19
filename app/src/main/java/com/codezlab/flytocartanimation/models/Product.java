@@ -1,9 +1,5 @@
 package com.codezlab.flytocartanimation.models;
 
-/**
- * Created by coderzlab on 20/5/17.
- */
-
 public class Product {
 
     private int id;

@@ -1,8 +1,5 @@
 package com.codezlab.flytocartanimation.util;
 
-/**
- * Created by coderzlab on 18/8/16.
- */
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -22,9 +19,6 @@ import android.widget.FrameLayout;
 
 import java.lang.ref.WeakReference;
 
-/**
- * Created by DK on 2015/3/19.
- */
 public class CircleAnimationUtil {
     private static final int DEFAULT_DURATION = 1000;
     private static final int DEFAULT_DURATION_DISAPPEAR = 200;

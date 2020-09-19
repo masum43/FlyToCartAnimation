@@ -1,8 +1,5 @@
 package com.codezlab.flytocartanimation.util;
 
-/**
- * Created by coderzlab on 18/8/16.
- */
 
 import android.content.Context;
 import android.graphics.Bitmap;
